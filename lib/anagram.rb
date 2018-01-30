@@ -6,4 +6,5 @@ class Anagram
   end
 
   def match(words)
-    words.each do |word|
+    words.each do |w|
+      if master == w.sort
