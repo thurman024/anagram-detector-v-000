@@ -6,5 +6,8 @@ class Anagram
   end
 
   def match(words)
+    matches = []
+    master = @word.split.sort
     words.each do |w|
-      if master == w.sort
+      if master == w.split.sort
+        matches << w
